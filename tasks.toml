@@ -3,7 +3,7 @@ the_goal = "1 Step at a time!"
 
 [[tasks]]
 id = 1
-title = "Setup and Hello World"
+title = "Setup & Hello World"
 description = """
 1. Install Rust toolchain + verification tools (Kani, Creusot, coq-of-rust).
 2. Run HELLO WORLD
