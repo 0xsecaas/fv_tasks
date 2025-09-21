@@ -1,0 +1,252 @@
+current_index = 0
+the_goal = "1 Step at a time!"
+
+[[tasks]]
+id = 1
+title = "Setup and Hello World"
+description = """
+1. Install Rust toolchain + verification tools (Kani, Creusot, coq-of-rust).
+2. Run HELLO WORLD
+3. Verify a simple invariant: function add(x,y) always >= x.
+"""
+done = false
+
+[[tasks]]
+id = 2
+title = "Learn Specification Syntax"
+description = """
+1. Write #[requires] and #[ensures] specs for 3 simple Rust functions:
+   - factorial
+   - max of two numbers
+   - array sum
+2. Verify all with Prusti.
+3. Document proof process in notes.
+"""
+done = false
+
+[[tasks]]
+id = 3
+title = "Blog #1 — Intro to Formal Verification"
+description = """
+1. Write <250 word blog: why testing ≠ proving.
+2. Show one Rust function + spec + Prusti run.
+3. Publish under 0xsecaas.
+"""
+done = false
+
+[[tasks]]
+id = 4
+title = "Clone Ink! Examples"
+description = """
+1. Clone https://github.com/paritytech/ink-examples
+2. Explore ERC20 contract.
+3. Identify 2 invariants: 
+   - total supply fixed
+   - no negative balances
+"""
+done = false
+
+[[tasks]]
+id = 5
+title = "Prove ERC20 Transfer"
+description = """
+1. Write specs for transfer() in simplified Rust version.
+2. Verify using Prusti or Kani.
+3. Push to GitHub as 'erc20-verification'.
+"""
+done = false
+
+[[tasks]]
+id = 6
+title = "Deep Dive Polkadot Balances Pallet"
+description = """
+1. Read balances/lib.rs, first 300 lines.
+2. Diagram data structures: AccountData, BalanceLock.
+3. Identify invariants: balances >= 0, total issuance matches sum.
+"""
+done = false
+
+[[tasks]]
+id = 7
+title = "Model Balances Pallet in Rust"
+description = """
+1. Write minimal Rust version of balances state machine.
+2. Encode invariants in #[ensures].
+3. Verify each transition.
+"""
+done = false
+
+[[tasks]]
+id = 8
+title = "Blog #2 — ERC20 Proof Walkthrough"
+description = """
+1. Show ERC20 spec, invariant, proof result.
+2. Compare fuzz testing vs. verification.
+3. Publish on Medium.
+"""
+done = false
+
+[[tasks]]
+id = 9
+title = "Open First PR"
+description = """
+1. Fork balances pallet repo.
+2. Add README with your verified model + results.
+3. Open PR as documentation/verification example.
+"""
+done = false
+
+[[tasks]]
+id = 10
+title = "Study Ethereum Consensus Client"
+description = """
+1. Pick Lighthouse or Teku.
+2. Identify core state transitions: block validation, fork choice.
+3. Write notes + 2 candidate invariants.
+"""
+done = false
+
+[[tasks]]
+id = 11
+title = "Model Block Validation"
+description = """
+1. Write simplified Rust model for header validation.
+2. Encode invariant: only valid blocks extend chain.
+3. Verify with Kani.
+"""
+done = false
+
+[[tasks]]
+id = 12
+title = "Blog #3 — Formal Verification of Balances"
+description = """
+1. Explain balances pallet invariants.
+2. Show annotated Rust model + proof output.
+3. Share widely.
+"""
+done = false
+
+[[tasks]]
+id = 13
+title = "Start GitHub Project 'fv-examples'"
+description = """
+1. Create repo with folders:
+   - basics/
+   - erc20/
+   - balances/
+   - consensus/
+2. Push all proof code.
+3. Add MIT license + README.
+"""
+done = false
+
+[[tasks]]
+id = 14
+title = "Select a Bug Bounty Scope"
+description = """
+1. Pick one active scope (Ethereum bridge, DeFi protocol).
+2. Read scope docs carefully.
+3. Extract candidate invariants.
+"""
+done = false
+
+[[tasks]]
+id = 15
+title = "Formalize Bug Bounty Specs"
+description = """
+1. Model simplified contract logic.
+2. Write 2–3 key invariants (e.g., no inflation, reserve solvency).
+3. Try proving violations.
+"""
+done = false
+
+[[tasks]]
+id = 16
+title = "Submit Bug Bounty Report"
+description = """
+1. If bug found → submit responsibly.
+2. If not → publish proof write-up on GitHub/Medium.
+3. Treat both as portfolio wins.
+"""
+done = false
+
+[[tasks]]
+id = 17
+title = "Blog #4 — Using Formal Verification in Bug Bounties"
+description = """
+1. Write about how specs expose deeper logic flaws.
+2. Walk through bounty attempt.
+3. Emphasize method > result.
+"""
+done = false
+
+[[tasks]]
+id = 18
+title = "Compound Invariants"
+description = """
+1. Pick a pallet (staking) or consensus rule.
+2. Write invariants across multiple functions.
+   Example: bonded + free balances constant.
+3. Prove interactions, not single funcs.
+"""
+done = false
+
+[[tasks]]
+id = 19
+title = "Automate Proof Runs"
+description = """
+1. Setup GitHub Action to run verification on every push.
+2. Ensure failing proofs block CI.
+3. Document setup for others.
+"""
+done = false
+
+[[tasks]]
+id = 20
+title = "Blog #5 — Continuous Formal Verification"
+description = """
+1. Explain CI integration for proofs.
+2. Show YAML + output.
+3. Position yourself as 'Security-as-Code'.
+"""
+done = false
+
+[[tasks]]
+id = 21
+title = "PR to Lighthouse/Polkadot"
+description = """
+1. Pick one open issue where spec is unclear.
+2. Add formal model + proofs in documentation.
+3. Open PR with detailed notes.
+"""
+done = false
+
+[[tasks]]
+id = 22
+title = "Summarize Portfolio"
+description = """
+1. Write GitHub README listing all verified modules.
+2. Add diagrams + proof summaries.
+3. Pin repo to 0xsecaas profile.
+"""
+done = false
+
+[[tasks]]
+id = 23
+title = "Blog #6 — 6 Months in Formal Verification"
+description = """
+1. Write reflective piece: what you proved, learned, shipped.
+2. Highlight transferable skills to any protocol.
+3. Share on Medium, Twitter, Telegram groups.
+"""
+done = false
+
+[[tasks]]
+id = 24
+title = "Reach Out to Protocol Teams"
+description = """
+1. Send your portfolio link to Polkadot, Ethereum, Solana, and FV hiring teams.
+2. Emphasize your proofs + PRs.
+3. Ask for feedback, not jobs. (Jobs follow.)
+"""
+done = false
